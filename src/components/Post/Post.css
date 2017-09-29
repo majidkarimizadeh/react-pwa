@@ -1,0 +1,17 @@
+.post {
+
+    margin: 20px auto;
+    padding: 5px 20px 10px 20px;
+    width: 80%;
+    background-color: #EEEDC5
+}
+
+.post > h3 > a {
+    text-decoration: none ;
+    color: #0E1116
+}
+
+.post > p {
+    line-height: 1.75;
+    color: #374A67
+}

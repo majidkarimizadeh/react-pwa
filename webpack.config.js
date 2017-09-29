@@ -11,6 +11,10 @@ module.exports = {
     output: {
         filename: 'bundle.js'
     },
+    devServer:{
+        historyApiFallback:true,
+        publicPath:'/'
+    },
     module:{
         rules:[{
             enforce: 'pre',

@@ -1,6 +1,5 @@
 import React from 'react'
 import { render } from 'react-dom'
-import Header from './components/Header/Header'
-import './base.css'
+import App from './components/App/App'
 
-render(<Header />, document.getElementById('app'))
+render(<App />, document.getElementById('app'))
