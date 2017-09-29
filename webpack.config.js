@@ -3,7 +3,6 @@ const DashboardPlugin     = require('webpack-dashboard/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-
 const srcDir = resolve(__dirname, 'src')
 
 module.exports = {
@@ -28,7 +27,7 @@ module.exports = {
             test: /\.css$/,
             use: ExtractTextPlugin.extract({
                 fallbackLoader: 'style-loader',
-                loader: 'css-loader?modules,localIdentName=[hash:base64:6]-[name]-[local]'
+                loader: 'css-loader?modules,localIdentName=[hash:base64:6]-[name]-[local],camelCase',
             }),
             exclude: /node_modlues/
         }]
