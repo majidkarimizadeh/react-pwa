@@ -1,6 +1,6 @@
 # react-pwa
 it's simple blog with react
-live demo http://example.com
+live demo https://majid.surge.sh
 
 
 instalation

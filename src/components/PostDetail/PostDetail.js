@@ -5,7 +5,7 @@ class PostDetail extends Component {
   render () {
     return (
       <div className={styles.post}>
-        <h3><a href={this.props.slug}>{this.props.title}</a></h3>
+        <h3>{this.props.title}</h3>
         <p>
           {this.props.content}
         </p>
