@@ -5,8 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "deploy": "surge --project dist --domain https://majid.surge.sh",
-    "build": "webpack --config webpack.prod.js -p",
-    "dev": "webpack-dashboard -- webpack-dev-server",
+    "build": "webpack --config webpack/webpack.prod.js -p",
+    "dev": "webpack-dashboard -- webpack-dev-server --config webpack/webpack.dev.js",
     "test": "jest"
   },
   "repository": {
@@ -30,10 +30,14 @@
     "babel-preset-react": "^6.24.1",
     "bootstrap-css-only": "^4.0.0-beta",
     "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.1.0",
     "css-loader": "^0.28.7",
     "extract-text-webpack-plugin": "2.1.2",
     "html-webpack-plugin": "^2.30.1",
     "jest": "^21.2.1",
+    "offline-plugin": "^4.8.4",
+    "preact": "^8.2.5",
+    "preact-compat": "^3.17.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-router-dom": "^4.2.2",

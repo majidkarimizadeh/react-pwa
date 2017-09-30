@@ -2,15 +2,14 @@ const { resolve }       = require('path');
 const DashboardPlugin     = require('webpack-dashboard/plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
-
-const srcDir = resolve(__dirname, 'src')
+    
+const srcDir = resolve(__dirname, '../src')
 
 module.exports = {
-
+    
     entry: `${srcDir}/index.js`,
     output: {
-        filename: 'bundle.js',
-        publicPath:'/'
+        filename: 'bundle.js'
     },
     devServer:{
         historyApiFallback:true
@@ -38,7 +37,7 @@ module.exports = {
     },
     plugins:[
         new HtmlWebpackPlugin({
-            template:`${srcDir}/index.html`
+            template: `${srcDir}/index.html`
         }),
         new DashboardPlugin(),
         new ExtractTextPlugin({filename: '[name].css', allChunks: true})
