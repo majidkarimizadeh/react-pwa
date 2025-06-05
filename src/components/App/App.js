@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Header from '../Header/Header'
 import Home from '../Home/Home'
 import About from '../About/About'
+import Contact from '../Contact/Contact'; // Added import
 import PostDetail from '../PostDetail/PostDetail'
 import posts from '../Home/posts.json'
 import {
@@ -18,6 +19,7 @@ class App extends Component {
           <Header />
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
+          <Route exact path='/contact' component={Contact} /> {/* Added route */}
           <Route path='/post/:slug' component={(props) => {
             let selectedPost = posts.posts.filter((post) => props.match.params.slug === post.slug)
             return <PostDetail {...props} {...selectedPost[0]} />
