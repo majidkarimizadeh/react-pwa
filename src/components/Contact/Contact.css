@@ -1,0 +1,10 @@
+.contactContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+.phoneNumber {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+}
